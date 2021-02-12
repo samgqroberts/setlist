@@ -2,6 +2,8 @@ import data from './song-data.json';
 import styles from './App.module.css';
 import React from 'react';
 
+const songs = data.filter(d => !!d.playInfo);
+
 function App() {
   return (
     <div className={styles.app}>
@@ -13,31 +15,13 @@ function App() {
             <div className={styles.search}>search</div>
           </div>
           <table className={styles.songListTable}>
-            <thead>
-              <td>Song Name</td>
-              <td>Original Artist</td>
-              <td>Times</td>
-              <td>Debut</td>
-              <td>Last</td>
-              <td>Gap</td>
-            </thead>
             <tbody>
-              {data.map(d => (
+              {songs.map(d => (
                 <tr key={d.songName}>
+                  <td>+</td>
                   <td>{d.songName}</td>
-                  <td>{d.originalArtist}</td>
-                  {d.aliasOf ? (
-                    <td>Alias of&nbsp;{d.aliasOf}</td>
-                  ) : d.foundInDiscography ? (
-                    <td>Found in Discography</td>
-                  ) : (
-                    <React.Fragment>
-                      <td>{d.playInfo?.times}</td>
-                      <td>{d.playInfo?.debut}</td>
-                      <td>{d.playInfo?.last}</td>
-                      <td>{d.playInfo?.gap}</td>
-                    </React.Fragment>
-                  )}
+                  <td>{d.playInfo?.last}</td>
+                  <td>{d.playInfo?.times}</td>
                 </tr>
               ))}
             </tbody>

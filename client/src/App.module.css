@@ -16,7 +16,7 @@
 
 .songList {
   margin: 0 40px;
-  width: 320px;
+  width: 420px;
   display: flex;
   flex-direction: column;
 }
@@ -32,6 +32,34 @@
 .songListTable {
   background: lightgrey;
   flex: 1;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.songListTable tbody {
+  width: 100%;
+}
+
+.songListTable tr {
+  height: 50px;
+  width: 100%;
+}
+.songListTable td {
+  padding: 2px;
+  margin: 0;
+}
+.songListTable td:nth-child(1) {
+  width: 10%;
+}
+.songListTable td:nth-child(2) {
+  width: 50%;
+}
+.songListTable td:nth-child(3) {
+  width: 27%;
+}
+.songListTable td:nth-child(4) {
+  width: 13%;
 }
 
 .roster {
