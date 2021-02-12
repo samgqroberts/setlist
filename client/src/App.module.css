@@ -12,6 +12,8 @@
   background: lightcyan;
   flex: 1;
   justify-content: space-around;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .songList {
@@ -19,6 +21,7 @@
   width: 420px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header {
@@ -29,16 +32,30 @@
   align-items: center;
 }
 
+.songListTableContainer {
+  position: absolute;
+  top: SongListHeaderHeight;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
 .songListTable {
   background: lightgrey;
-  flex: 1;
   border-spacing: 0;
   table-layout: fixed;
+  height: 100%;
   width: 100%;
+  display: block;
 }
 
 .songListTable tbody {
+  height: 100%;
   width: 100%;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .songListTable tr {
