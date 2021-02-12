@@ -1,0 +1,42 @@
+@value SongListHeaderHeight: 40px;
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  background: lightcyan;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.songList {
+  margin: 0 40px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  border: 1px solid lightblue;
+  height: SongListHeaderHeight;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.songListTable {
+  background: lightgrey;
+  flex: 1;
+}
+
+.roster {
+  background: lightgrey;
+  margin: 0 40px;
+  width: 320px;
+  margin-top: SongListHeaderHeight;
+}
