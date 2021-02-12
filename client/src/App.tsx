@@ -1,10 +1,12 @@
 import data from './song-data.json';
 import styles from './App.module.css';
-import React from 'react';
+import { useState } from 'react';
 
 const songs = data.filter(d => !!d.playInfo);
 
 function App() {
+  const [search, setSearch] = useState<string>('');
+  const filteredSongs = songs.filter(s => s.songName.includes(search));
   return (
     <div className={styles.app}>
       <h1>Setlist</h1>
@@ -12,12 +14,12 @@ function App() {
         <div className={styles.songList}>
           <div className={styles.header}>
             <div className={styles.filter}>filter | sort</div>
-            <div className={styles.search}>search</div>
+            <input type="text" placeholder="search" value={search} onChange={e => setSearch(e.target.value)} />
           </div>
           <div className={styles.songListTableContainer}>
             <table className={styles.songListTable}>
               <tbody>
-                {songs.map(d => (
+                {filteredSongs.map(d => (
                   <tr key={d.songName}>
                     <td>+</td>
                     <td>{d.songName}</td>
