@@ -122,15 +122,15 @@
   align-items: center;
 }
 
-.roster td:nth-child(1) {
+.removeCell {
   width: 10%;
 }
-.roster td:nth-child(2) {
+.rosterSongName {
   width: 90%;
   text-align: left;
 }
 
-.roster .empty {
+.roster .emptyCell {
   padding: 10px;
 }
 

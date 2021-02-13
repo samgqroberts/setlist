@@ -9,7 +9,7 @@ function App() {
   const [search, setSearch] = useState<string>('');
   const [roster, setRoster] = useState<R.Roster>(R.empty())
   const filteredSongs = songs
-    .filter(s => s.songName.includes(search))
+    .filter(s => s.songName.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
     .filter(s => !R.includes(roster, s.songName))
     .sort((a, b) => a.songName.localeCompare(b.songName));
   const addSong = (songName: string) => () => {
@@ -31,7 +31,7 @@ function App() {
             <table className={styles.songListTable}>
               <tbody>
                 {filteredSongs.map(d => (
-                  <tr key={d.songName}>
+                  <tr key={d.songName + (d.originalArtist || '')}>
                     <td>
                       <button className={styles.addButton} onClick={addSong(d.songName)}>
                         +
@@ -53,15 +53,15 @@ function App() {
                 <tr key={(slot || '') + i}>
                   {slot ? (
                     <Fragment>
-                      <td>
+                      <td className={styles.removeCell}>
                         <button className={styles.removeButton} onClick={clearIndex(i)}>
                           -
                         </button>
                       </td>
-                      <td>{slot}</td>
+                      <td className={styles.rosterSongName}>{slot}</td>
                     </Fragment>
                   ) : (
-                    <div className={styles.empty}>Slot {i + 1}</div>
+                    <td className={styles.emptyCell}>Slot {i + 1}</td>
                   )}
                 </tr>
               ))}
