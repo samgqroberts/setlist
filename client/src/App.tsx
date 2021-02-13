@@ -24,8 +24,7 @@ function App() {
       <div className={styles.content}>
         <div className={styles.songList}>
           <div className={styles.header}>
-            <div className={styles.filter}>filter | sort</div>
-            <input type="text" placeholder="search" value={search} onChange={e => setSearch(e.target.value)} />
+            <input className={styles.search} type="text" placeholder="search" value={search} onChange={e => setSearch(e.target.value)} />
           </div>
           <div className={styles.songListTableContainer}>
             <table className={styles.songListTable}>

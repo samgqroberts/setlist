@@ -28,8 +28,12 @@
   border: 1px solid lightblue;
   height: SongListHeaderHeight;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.search {
+  margin-right: 20px;
 }
 
 .songListTableContainer {
