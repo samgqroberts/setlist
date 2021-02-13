@@ -1,44 +1,56 @@
-import data from './song-data.json';
-import styles from './App.module.css';
 import { Fragment, useState } from 'react';
+
+import styles from './App.module.css';
 import * as R from './Roster';
+import data from './song-data.json';
 
-const songs = data.filter(d => !!d.playInfo);
+const songs = data.filter((d) => !!d.playInfo);
 
-function App() {
+const App: React.FC = () => {
   const [search, setSearch] = useState<string>('');
-  const [roster, setRoster] = useState<R.Roster>(R.empty())
+  const [roster, setRoster] = useState<R.Roster>(R.empty());
   const filteredSongs = songs
-    .filter(s => s.songName.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
-    .filter(s => !R.includes(roster, s.songName))
+    .filter((s) =>
+      s.songName.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+    )
+    .filter((s) => !R.includes(roster, s.songName))
     .sort((a, b) => a.songName.localeCompare(b.songName));
   const addSong = (songName: string) => () => {
     setRoster(R.addSong(roster, songName));
-  }
+  };
   const clearIndex = (index: R.RosterIndex) => () => {
     setRoster(R.clearIndex(roster, index));
-  }
+  };
   const submit = () => {
     console.log('submit');
-  }
+  };
   const clear = () => {
     setRoster(R.empty());
-  }
+  };
   return (
     <div className={styles.app}>
       <h1>Setlist</h1>
       <div className={styles.content}>
         <div className={styles.songList}>
           <div className={styles.header}>
-            <input className={styles.search} type="text" placeholder="search" value={search} onChange={e => setSearch(e.target.value)} />
+            <input
+              className={styles.search}
+              type="text"
+              placeholder="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
           </div>
           <div className={styles.songListTableContainer}>
             <table className={styles.songListTable}>
               <tbody>
-                {filteredSongs.map(d => (
+                {filteredSongs.map((d) => (
                   <tr key={d.songName + (d.originalArtist || '')}>
                     <td>
-                      <button className={styles.addButton} onClick={addSong(d.songName)}>
+                      <button
+                        className={styles.addButton}
+                        onClick={addSong(d.songName)}
+                      >
                         +
                       </button>
                     </td>
@@ -59,7 +71,10 @@ function App() {
                   {slot ? (
                     <Fragment>
                       <td className={styles.removeCell}>
-                        <button className={styles.removeButton} onClick={clearIndex(i)}>
+                        <button
+                          className={styles.removeButton}
+                          onClick={clearIndex(i)}
+                        >
                           -
                         </button>
                       </td>
@@ -73,13 +88,17 @@ function App() {
             </tbody>
           </table>
           <div className={styles.buttons}>
-            <button className={styles.submit} onClick={submit}>Submit</button>
-            <button className={styles.clear} onClick={clear}>Clear</button>
+            <button className={styles.submit} onClick={submit}>
+              Submit
+            </button>
+            <button className={styles.clear} onClick={clear}>
+              Clear
+            </button>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;

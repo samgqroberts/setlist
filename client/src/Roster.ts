@@ -8,20 +8,17 @@ export type RosterLengthTuple<T> = [T, T, T, T, T, T, T, T, T];
 export type SlotTuple = RosterLengthTuple<Slot>;
 
 export interface Roster {
-  s1: Slot
-  s2: Slot
-  s3: Slot
-  s4: Slot
-  s5: Slot
-  s6: Slot
-  s7: Slot
-  s8: Slot
-  s9: Slot
+  s1: Slot;
+  s2: Slot;
+  s3: Slot;
+  s4: Slot;
+  s5: Slot;
+  s6: Slot;
+  s7: Slot;
+  s8: Slot;
+  s9: Slot;
 }
-export function getIndex(
-  roster: Roster,
-  index: RosterIndex,
-): Slot {
+export function getIndex(roster: Roster, index: RosterIndex): Slot {
   switch (index) {
     case 0:
       return roster.s1;
@@ -70,31 +67,36 @@ export function setIndex(
   }
 }
 function isRosterIndex(data: unknown): data is RosterIndex {
-  return isNumber(data) &&
-    (data === 0
-      || data === 1
-      || data === 2
-      || data === 3
-      || data === 4
-      || data === 5
-      || data === 6
-      || data === 7
-      || data === 8);
+  return (
+    isNumber(data) &&
+    (data === 0 ||
+      data === 1 ||
+      data === 2 ||
+      data === 3 ||
+      data === 4 ||
+      data === 5 ||
+      data === 6 ||
+      data === 7 ||
+      data === 8)
+  );
 }
 
 export function addSong(roster: Roster, songName: string): Roster {
   const { s1, s2, s3, s4, s5, s6, s7, s8, s9 } = roster;
-  const freeIndex = [s1, s2, s3, s4, s5, s6, s7, s8, s9].findIndex(s => !s);
+  const freeIndex = [s1, s2, s3, s4, s5, s6, s7, s8, s9].findIndex((s) => !s);
   if (isRosterIndex(freeIndex)) return setIndex(roster, freeIndex, songName);
   return roster;
 }
 
 function toSlotTuple(roster: Roster): SlotTuple {
-  return map(roster, slot => slot);
+  return map(roster, (slot) => slot);
 }
 
 function compress(roster: Roster): Roster {
-  return toSlotTuple(roster).reduce((acc, el) => el ? addSong(acc, el) : acc, empty());
+  return toSlotTuple(roster).reduce(
+    (acc, el) => (el ? addSong(acc, el) : acc),
+    empty()
+  );
 }
 
 export function clearIndex(roster: Roster, index: RosterIndex): Roster {
@@ -103,19 +105,27 @@ export function clearIndex(roster: Roster, index: RosterIndex): Roster {
 
 export function empty(): Roster {
   return {
-    s1: undefined, s2: undefined, s3: undefined, s4: undefined,
-    s5: undefined, s6: undefined, s7: undefined, s8: undefined,
+    s1: undefined,
+    s2: undefined,
+    s3: undefined,
+    s4: undefined,
+    s5: undefined,
+    s6: undefined,
+    s7: undefined,
+    s8: undefined,
     s9: undefined
   };
 }
 
 export function map<T>(
   roster: Roster,
-  f: (slot: Slot, index: RosterIndex) => T,
+  f: (slot: Slot, index: RosterIndex) => T
 ): RosterLengthTuple<T> {
-  return rosterIndices.map(i => f(getIndex(roster, i), i)) as RosterLengthTuple<T>;
+  return rosterIndices.map((i) =>
+    f(getIndex(roster, i), i)
+  ) as RosterLengthTuple<T>;
 }
 
 export function includes(roster: Roster, songName: string): boolean {
-  return isNumber(rosterIndices.find(i => getIndex(roster, i) === songName));
+  return isNumber(rosterIndices.find((i) => getIndex(roster, i) === songName));
 }
