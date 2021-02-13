@@ -6,6 +6,9 @@ const Results: React.FC<{
 }> = ({ roster }) => {
   return (
     <div className={styles.results}>
+      <a className={styles.backlink} href="/">
+        (choose another setlist)
+      </a>
       <div className={styles.yourScoreContainer}>
         <div className={styles.banner}>
           <h3>Your score</h3>

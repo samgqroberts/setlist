@@ -6,6 +6,10 @@
   padding: 10px 40px;
 }
 
+.backlink {
+  margin-bottom: 10px;
+}
+
 .banner {
   border: 1px solid lightgrey;
   text-align: center;
