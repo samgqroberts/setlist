@@ -10,6 +10,7 @@ function App() {
   const [roster, setRoster] = useState<R.Roster>(R.empty())
   const filteredSongs = songs
     .filter(s => s.songName.includes(search))
+    .filter(s => !R.includes(roster, s.songName))
     .sort((a, b) => a.songName.localeCompare(b.songName));
   const addSong = (songName: string) => () => {
     setRoster(R.addSong(roster, songName));
@@ -49,7 +50,7 @@ function App() {
           <table className={styles.roster}>
             <tbody>
               {R.map(roster, (slot, i) => (
-                <tr key={i}>
+                <tr key={(slot || '') + i}>
                   {slot ? (
                     <Fragment>
                       <td>

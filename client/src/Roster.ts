@@ -89,8 +89,16 @@ export function addSong(roster: Roster, songName: string): Roster {
   return roster;
 }
 
+function toSlotTuple(roster: Roster): SlotTuple {
+  return map(roster, slot => slot);
+}
+
+function compress(roster: Roster): Roster {
+  return toSlotTuple(roster).reduce((acc, el) => el ? addSong(acc, el) : acc, empty());
+}
+
 export function clearIndex(roster: Roster, index: RosterIndex): Roster {
-  return setIndex(roster, index, undefined);
+  return compress(setIndex(roster, index, undefined));
 }
 
 export function empty(): Roster {
@@ -106,4 +114,8 @@ export function map<T>(
   f: (slot: Slot, index: RosterIndex) => T,
 ): RosterLengthTuple<T> {
   return rosterIndices.map(i => f(getIndex(roster, i), i)) as RosterLengthTuple<T>;
+}
+
+export function includes(roster: Roster, songName: string): boolean {
+  return isNumber(rosterIndices.find(i => getIndex(roster, i) === songName));
 }
