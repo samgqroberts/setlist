@@ -1,6 +1,6 @@
 import data from './song-data.json';
 import styles from './App.module.css';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import * as R from './Roster';
 
 const songs = data.filter(d => !!d.playInfo);
@@ -46,16 +46,22 @@ function App() {
           </div>
         </div>
         <div className={styles.rosterContainer}>
-          <table>
+          <table className={styles.roster}>
             <tbody>
               {R.map(roster, (slot, i) => (
                 <tr key={i}>
-                  <td>
-                    <button className={styles.removeButton} onClick={clearIndex(i)}>
-                      -
-                    </button>
-                  </td>
-                  <td>{slot}</td>
+                  {slot ? (
+                    <Fragment>
+                      <td>
+                        <button className={styles.removeButton} onClick={clearIndex(i)}>
+                          -
+                        </button>
+                      </td>
+                      <td>{slot}</td>
+                    </Fragment>
+                  ) : (
+                    <div className={styles.empty}>Slot {i + 1}</div>
+                  )}
                 </tr>
               ))}
             </tbody>
