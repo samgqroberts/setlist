@@ -9,9 +9,8 @@
 
 .content {
   display: flex;
-  background: lightcyan;
   flex: 1;
-  justify-content: space-around;
+  justify-content: center;
   overflow: hidden;
   padding-bottom: 20px;
 }
@@ -25,7 +24,6 @@
 }
 
 .header {
-  border: 1px solid lightblue;
   height: SongListHeaderHeight;
   display: flex;
   justify-content: flex-end;
@@ -46,12 +44,12 @@
 }
 
 .songListTable {
-  background: lightgrey;
-  border-spacing: 0;
   table-layout: fixed;
   height: 100%;
   width: 100%;
   display: block;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
 }
 
 .songListTable tbody {
@@ -66,7 +64,16 @@
   height: 50px;
   width: 100%;
   display: flex;
+  border: 1px solid lightgrey;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
 }
+
+.songListTable tr:last-of-type {
+  border-bottom-width: 0;
+}
+
 .songListTable td {
   padding: 2px;
   margin: 0;
@@ -105,12 +112,13 @@
 }
 
 .roster {
-  background: lightgrey;
   border-spacing: 0;
   table-layout: fixed;
   height: 80%;
   width: 100%;
   display: block;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
 }
 
 .roster tbody {
@@ -124,6 +132,14 @@
   display: flex;
   flex: 1;
   align-items: center;
+  border: 1px solid lightgrey;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.roster tr:last-of-type {
+  border-bottom-width: 0;
 }
 
 .removeCell {
