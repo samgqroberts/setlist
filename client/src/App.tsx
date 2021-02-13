@@ -1,12 +1,22 @@
 import data from './song-data.json';
 import styles from './App.module.css';
 import { useState } from 'react';
+import * as R from './Roster';
 
 const songs = data.filter(d => !!d.playInfo);
 
 function App() {
   const [search, setSearch] = useState<string>('');
-  const filteredSongs = songs.filter(s => s.songName.includes(search));
+  const [roster, setRoster] = useState<R.Roster>(R.empty())
+  const filteredSongs = songs
+    .filter(s => s.songName.includes(search))
+    .sort((a, b) => a.songName.localeCompare(b.songName));
+  const addSong = (songName: string) => () => {
+    setRoster(R.addSong(roster, songName));
+  }
+  const clearIndex = (index: R.RosterIndex) => () => {
+    setRoster(R.clearIndex(roster, index));
+  }
   return (
     <div className={styles.app}>
       <h1>Setlist</h1>
@@ -21,20 +31,36 @@ function App() {
               <tbody>
                 {filteredSongs.map(d => (
                   <tr key={d.songName}>
-                    <td>+</td>
+                    <td>
+                      <button className={styles.addButton} onClick={addSong(d.songName)}>
+                        +
+                      </button>
+                    </td>
                     <td>{d.songName}</td>
                     <td>{d.playInfo?.last}</td>
                     <td>{d.playInfo?.times}</td>
                   </tr>
                 ))}
               </tbody>
-              Song list table
             </table>
           </div>
         </div>
-      <div className={styles.roster}>
-        Roster
-      </div>
+        <div className={styles.rosterContainer}>
+          <table>
+            <tbody>
+              {R.map(roster, (slot, i) => (
+                <tr key={i}>
+                  <td>
+                    <button className={styles.removeButton} onClick={clearIndex(i)}>
+                      -
+                    </button>
+                  </td>
+                  <td>{slot}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

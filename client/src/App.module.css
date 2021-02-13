@@ -83,7 +83,16 @@
   width: 13%;
 }
 
-.roster {
+.addButton {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.rosterContainer {
   background: lightgrey;
   margin: 0 40px;
   width: 320px;
