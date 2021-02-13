@@ -1,4 +1,10 @@
 import { Fragment, useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useHistory
+} from 'react-router-dom';
 
 import styles from './App.module.css';
 import * as R from './Roster';
@@ -6,7 +12,9 @@ import data from './song-data.json';
 
 const songs = data.filter((d) => !!d.playInfo);
 
-const App: React.FC = () => {
+const ChooseSetlist: React.FC<{
+  onSubmit: (roster: R.Roster) => void;
+}> = ({ onSubmit }) => {
   const [search, setSearch] = useState<string>('');
   const [roster, setRoster] = useState<R.Roster>(R.empty());
   const filteredSongs = songs
@@ -22,7 +30,7 @@ const App: React.FC = () => {
     setRoster(R.clearIndex(roster, index));
   };
   const submit = () => {
-    console.log('submit');
+    onSubmit(roster);
   };
   const clear = () => {
     setRoster(R.empty());
@@ -98,6 +106,41 @@ const App: React.FC = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const Results: React.FC<{
+  roster: R.Roster | undefined;
+}> = ({ roster }) => {
+  return <div className={styles.results}>{JSON.stringify(roster)}</div>;
+};
+
+const Routed: React.FC = () => {
+  const [submittedRoster, setSubmittedRoster] = useState<R.Roster | undefined>(
+    undefined
+  );
+  const history = useHistory();
+  const onSubmit = (roster: R.Roster) => {
+    setSubmittedRoster(roster);
+    history.push('/results');
+  };
+  return (
+    <Switch>
+      <Route exact path="/">
+        <ChooseSetlist {...{ onSubmit }} />
+      </Route>
+      <Route exact path="/results">
+        <Results roster={submittedRoster} />
+      </Route>
+    </Switch>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routed />
+    </Router>
   );
 };
 
