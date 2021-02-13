@@ -18,6 +18,12 @@ function App() {
   const clearIndex = (index: R.RosterIndex) => () => {
     setRoster(R.clearIndex(roster, index));
   }
+  const submit = () => {
+    console.log('submit');
+  }
+  const clear = () => {
+    setRoster(R.empty());
+  }
   return (
     <div className={styles.app}>
       <h1>Setlist</h1>
@@ -66,6 +72,10 @@ function App() {
               ))}
             </tbody>
           </table>
+          <div className={styles.buttons}>
+            <button className={styles.submit} onClick={submit}>Submit</button>
+            <button className={styles.clear} onClick={clear}>Clear</button>
+          </div>
         </div>
       </div>
     </div>
