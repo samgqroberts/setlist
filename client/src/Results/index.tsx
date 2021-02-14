@@ -1,9 +1,16 @@
+import * as C from '../general/Concert';
 import * as R from '../general/Roster';
+import * as RR from '../general/RosterResult';
 import styles from './Results.module.css';
 
 const Results: React.FC<{
   roster: R.Roster | undefined;
-}> = ({ roster }) => {
+  concert: C.Concert;
+  bustoutList: string[];
+  coverList: string[];
+}> = ({ roster, concert, bustoutList, coverList }) => {
+  const rosterResult =
+    roster && RR.computeRosterResult(roster, concert, bustoutList, coverList);
   return (
     <div className={styles.results}>
       <a className={styles.backlink} href="/">
@@ -13,7 +20,7 @@ const Results: React.FC<{
         <div className={styles.banner}>
           <h3>Your score</h3>
         </div>
-        {roster ? (
+        {rosterResult ? (
           <table className={styles.resultsTable}>
             <thead>
               <tr>
@@ -23,13 +30,12 @@ const Results: React.FC<{
               </tr>
             </thead>
             <tbody>
-              {R.rosterIndices.map((i) => {
-                const slot = R.getIndex(roster, i);
+              {RR.map(rosterResult, (sr, i) => {
                 return (
-                  <tr key={(slot || '') + i}>
-                    <td>{slot || '----'}</td>
-                    <td>Not Played</td>
-                    <td>0</td>
+                  <tr key={(sr?.songName || '') + i}>
+                    <td>{sr?.songName || '----'}</td>
+                    <td>{RR.fmap(sr, RR.slotResultToString) || '----'}</td>
+                    <td>{RR.fmap(sr, RR.slotResultToPoints) || 0}</td>
                   </tr>
                 );
               })}

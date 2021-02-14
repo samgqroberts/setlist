@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import ChooseSetlist from '../ChooseSetlist';
+import * as C from '../general/Concert';
 import * as R from '../general/Roster';
 import Results from '../Results';
 
@@ -19,13 +20,25 @@ const Routed: React.FC = () => {
     setSubmittedRoster(roster);
     history.push('/results');
   };
+  const concert: C.Concert = {
+    set1: {
+      songs: []
+    },
+    otherSets: [],
+    encore: undefined
+  };
+  const bustoutList: string[] = [];
+  const coverList: string[] = [];
   return (
     <Switch>
       <Route exact path="/">
         <ChooseSetlist {...{ onSubmit }} />
       </Route>
       <Route exact path="/results">
-        <Results roster={submittedRoster} />
+        <Results
+          roster={submittedRoster}
+          {...{ concert, bustoutList, coverList }}
+        />
       </Route>
     </Switch>
   );
