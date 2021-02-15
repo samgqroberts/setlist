@@ -9,8 +9,11 @@ import {
 import ChooseSetlist from '../ChooseSetlist';
 import * as C from '../general/Concert';
 import * as R from '../general/Roster';
-import { covers } from '../general/SongData';
+import { bustouts, covers } from '../general/SongData';
 import Results from '../Results';
+
+const bustoutList: string[] = bustouts.map((s) => s.songName);
+const coverList: string[] = covers.map((s) => s.songName);
 
 const Routed: React.FC = () => {
   const [submittedRoster, setSubmittedRoster] = useState<R.Roster | undefined>(
@@ -28,8 +31,6 @@ const Routed: React.FC = () => {
     otherSets: [],
     encore: undefined
   };
-  const bustoutList: string[] = [];
-  const coverList: string[] = covers.map((s) => s.songName);
   return (
     <Switch>
       <Route exact path="/">
