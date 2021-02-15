@@ -78,16 +78,41 @@ function parseSongData(
   return undefined;
 }
 
+const logging = true;
+
+function log(...params: Parameters<typeof process.stdout.write>): void {
+  if (logging) {
+    process.stdout.write(...params);
+  }
+}
+function logLn(...params: Parameters<typeof console.log>): void {
+  if (logging) {
+    console.log(...params);
+  }
+}
+function logStart(msg: string): void {
+  log(`${msg}...`);
+}
+function logDone(): void {
+  logLn(' Done!');
+}
+
 // Send an async HTTP Get request to the url
+logStart(`Contacting ${url}`);
 AxiosInstance.get(url)
   .then(response => {
+    logDone();
+    logStart(`Established connection, parsing html`);
     const html = response.data;
     const $ = cheerio.load(html);
     const songRows = $('#song-list > tbody > tr');
+    logDone();
+    logLn(`Found ${songRows.length} rows in the song list table`);
 
     const rows: SongData[] = [];
     const errors: string[][] = [];
 
+    logStart(`Parsing song data out of each row`);
     songRows.each((rowIndex, row) => {
       const raw: string[] = [];
 
@@ -110,11 +135,19 @@ AxiosInstance.get(url)
         errors.push(raw);
       }
     })
+    logDone();
+    logLn(`Parsed ${rows.length} valid songs.`);
+    logLn(`Found ${errors.length} songs that could not be parsed.`);
 
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir);
     }
+    
+    logStart(`Writing song data to ${dataFile}`);
     fs.writeFileSync(dataFile, JSON.stringify(rows.sort((a, b) => a.songName.localeCompare(b.songName)), null, 2));
+    logDone();
+    logStart(`Writing error data to ${errorsFile}`);
     fs.writeFileSync(errorsFile, JSON.stringify(errors, null, 2));
+    logDone();
   })
   .catch(console.error)
