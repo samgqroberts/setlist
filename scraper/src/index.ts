@@ -2,6 +2,7 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import fs from 'fs';
 import path from 'path';
+import { PlayInfo, SongData, isNumber, foundInDiscographyIndicator } from 'shared';
 
 const url = 'https://phish.net/song';
 const AxiosInstance = axios.create();
@@ -11,9 +12,6 @@ const dataDir = path.join(rootDir, 'data/');
 const dataFile = path.join(dataDir, 'song-data.json');
 const errorsFile = path.join(dataDir, 'errors.json');
 
-function isNumber(data: unknown): data is number {
-  return typeof data === 'number';
-}
 function asNumber(data: string): number | undefined {
   const parsed = parseInt(data, 10);
   return parsed === NaN ? undefined : parsed;
@@ -32,18 +30,12 @@ function parseAliasOf(data: string | undefined): string | undefined {
 }
 
 function parseFoundInDiscography(data: string | undefined): true | undefined {
-  if (data?.trim() === 'Found in Discography') {
+  if (data?.trim() === foundInDiscographyIndicator) {
     return true;
   }
   return undefined;
 }
 
-interface PlayInfo {
-  times: number
-  debut: string
-  last: string
-  gap: number
-}
 function parsePlayInfo(
   timesRaw: string | undefined,
   debutRaw: string | undefined,
@@ -60,23 +52,6 @@ function parsePlayInfo(
   if (!isNumber(gap)) return undefined;
   return { times, debut, last, gap };
 }
-
-interface SongDataWithPlayInfo {
-  songName: string
-  originalArtist?: string
-  playInfo: PlayInfo
-}
-interface SongDataAlias {
-  songName: string
-  originalArtist?: string
-  aliasOf: string
-}
-interface SongDataFoundInDiscography {
-  songName: string
-  originalArtist?: string
-  foundInDiscography: true
-}
-type SongData = SongDataWithPlayInfo | SongDataAlias | SongDataFoundInDiscography;
 
 function parseSongData(
   data0: string | undefined,

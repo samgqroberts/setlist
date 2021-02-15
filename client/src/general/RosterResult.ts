@@ -1,6 +1,7 @@
+import { assertNever, isNumber } from 'shared';
+
 import * as C from '../general/Concert';
 import * as R from '../general/Roster';
-import { assertNever, isNumber } from './types';
 
 interface SetOpener {
   setOpener: true;

@@ -1,10 +1,8 @@
 import { Fragment, useState } from 'react';
 
 import * as R from '../general/Roster';
-import data from '../general/song-data.json';
+import { songs } from '../general/SongData';
 import styles from './ChooseSetlist.module.css';
-
-const songs = data.filter((d) => !!d.playInfo);
 
 const ChooseSetlist: React.FC<{
   onSubmit: (roster: R.Roster) => void;

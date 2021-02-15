@@ -1,4 +1,4 @@
-import { isNumber } from './types';
+import { isNumber } from 'shared';
 
 export type RosterIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 export const rosterIndices = [0, 1, 2, 3, 4, 5, 6, 7, 8] as const;

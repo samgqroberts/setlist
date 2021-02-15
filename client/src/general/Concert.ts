@@ -1,4 +1,4 @@
-import { isNumber, isString } from './types';
+import { isNumber, isString } from 'shared';
 
 type Song = string;
 
