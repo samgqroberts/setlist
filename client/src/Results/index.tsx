@@ -28,7 +28,9 @@ const Results: React.FC<{
       {showConcert && <pre>{JSON.stringify(concert, null, 2)}</pre>}
       <div className={styles.yourScoreContainer}>
         <div className={styles.banner}>
-          <h3>Your score</h3>
+          <h3>
+            Your score{RR.fmap(rosterResult, (rr) => `: ${RR.total(rr)}`)}
+          </h3>
         </div>
         {rosterResult ? (
           <table className={styles.resultsTable}>

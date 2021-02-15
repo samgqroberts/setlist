@@ -143,7 +143,7 @@ export function getIndex(
 
 export function map<T>(
   rosterResult: RosterResult,
-  f: (slotResult: SlotResult | undefined, index: R.RosterIndex) => T
+  f: (slotResult: SlotResult | undefined, index?: R.RosterIndex) => T
 ): R.RosterLengthTuple<T> {
   return R.rosterIndices.map((i) =>
     f(getIndex(rosterResult, i), i)
@@ -204,4 +204,11 @@ export function slotResultToPoints(slotResult: SlotResult): number {
         })
         .reduce((acc, el) => acc + el, 0);
   }
+}
+
+export function total(rosterResult: RosterResult): number {
+  return map(rosterResult, (sr) => fmap(sr, slotResultToPoints)).reduce<number>(
+    (acc, el) => acc + (el || 0),
+    0
+  );
 }
