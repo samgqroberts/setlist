@@ -10,6 +10,11 @@
   margin-bottom: 10px;
 }
 
+.seeConcert {
+  margin-bottom: 10px;
+  max-width: 160px;
+}
+
 .banner {
   border: 1px solid lightgrey;
   text-align: center;

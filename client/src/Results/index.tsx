@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import * as C from '../general/Concert';
 import * as R from '../general/Roster';
 import * as RR from '../general/RosterResult';
@@ -9,13 +11,21 @@ const Results: React.FC<{
   bustoutList: string[];
   coverList: string[];
 }> = ({ roster, concert, bustoutList, coverList }) => {
+  const [showConcert, setShowConcert] = useState<boolean>(false);
   const rosterResult =
     roster && RR.computeRosterResult(roster, concert, bustoutList, coverList);
   return (
     <div className={styles.results}>
       <a className={styles.backlink} href="/">
-        (choose another setlist)
+        (choose another roster)
       </a>
+      <button
+        className={styles.seeConcert}
+        onClick={() => setShowConcert(!showConcert)}
+      >
+        ({showConcert ? 'hide' : 'show'} concert setlists)
+      </button>
+      {showConcert && <pre>{JSON.stringify(concert, null, 2)}</pre>}
       <div className={styles.yourScoreContainer}>
         <div className={styles.banner}>
           <h3>Your score</h3>
