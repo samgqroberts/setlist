@@ -2,7 +2,7 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import fs from 'fs';
 import path from 'path';
-import { PlayInfo, SongData, isNumber, foundInDiscographyIndicator } from 'shared';
+import { PlayInfo, SongData, isNumber } from 'shared';
 
 const url = 'https://phish.net/song';
 const AxiosInstance = axios.create();
@@ -29,13 +29,6 @@ function parseAliasOf(data: string | undefined): string | undefined {
   return undefined;
 }
 
-function parseFoundInDiscography(data: string | undefined): true | undefined {
-  if (data?.trim() === foundInDiscographyIndicator) {
-    return true;
-  }
-  return undefined;
-}
-
 function parsePlayInfo(
   timesRaw: string | undefined,
   debutRaw: string | undefined,
@@ -44,12 +37,15 @@ function parsePlayInfo(
 ): PlayInfo | undefined {
   const times = !!timesRaw ? asNumber(timesRaw) : undefined;
   if (!isNumber(times)) return undefined;
+  const gap = !!gapRaw ? asNumber(gapRaw) : undefined;
+  if (!isNumber(gap)) return undefined;
+  if (times === 0) {
+    return { times: 0, gap };
+  }
   const debut = !!debutRaw ? debutRaw : undefined;
   if (!debut) return undefined;
   const last = !!lastRaw ? lastRaw : undefined;
   if (!last) return undefined;
-  const gap = !!gapRaw ? asNumber(gapRaw) : undefined;
-  if (!isNumber(gap)) return undefined;
   return { times, debut, last, gap };
 }
 
@@ -67,13 +63,12 @@ function parseSongData(
   const originalArtist = !!data1 ? data1 : undefined;
 
   const playInfo = parsePlayInfo(data2, data3, data4, data5);
-  if (playInfo) return { songName, originalArtist, playInfo };
+  if (playInfo) { 
+    return { songName, originalArtist, playInfo }
+  }
 
   const aliasOf = parseAliasOf(data2);
   if (aliasOf) return { songName, originalArtist, aliasOf };
-
-  const foundInDiscography = parseFoundInDiscography(data2);
-  if (foundInDiscography) return { songName, originalArtist, foundInDiscography };
 
   return undefined;
 }

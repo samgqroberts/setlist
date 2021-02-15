@@ -55,8 +55,8 @@ const ChooseSetlist: React.FC<{
                       </button>
                     </td>
                     <td>{d.songName}</td>
-                    <td>{d.playInfo?.last}</td>
-                    <td>{d.playInfo?.times}</td>
+                    <td>{'last' in d.playInfo ? d.playInfo.last : '--'}</td>
+                    <td>{'times' in d.playInfo ? d.playInfo.times : '--'}</td>
                   </tr>
                 ))}
               </tbody>

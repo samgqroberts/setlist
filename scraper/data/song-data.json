@@ -26,13 +26,17 @@
   },
   {
     "songName": "35 Minute Jam",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "46 Days",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 110,
+      "times": 112,
       "debut": "2003-01-02",
       "last": "2020-02-22",
       "gap": 28
@@ -167,7 +171,7 @@
     "songName": "After Midnight",
     "originalArtist": "J.J. Cale",
     "playInfo": {
-      "times": 7,
+      "times": 8,
       "debut": "1999-12-31",
       "last": "2019-12-08",
       "gap": 36
@@ -176,7 +180,10 @@
   {
     "songName": "Aftermath",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Ain't Love Funny",
@@ -201,7 +208,10 @@
   {
     "songName": "Albert",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Albuquerque",
@@ -241,6 +251,14 @@
       "debut": "2009-10-31",
       "last": "2009-10-31",
       "gap": 454
+    }
+  },
+  {
+    "songName": "All Of Me",
+    "originalArtist": "Frank Sinatra",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
     }
   },
   {
@@ -287,7 +305,7 @@
     "songName": "Also Sprach Zarathustra",
     "originalArtist": "Strauss, as interpreted by Deodato",
     "playInfo": {
-      "times": 235,
+      "times": 237,
       "debut": "1993-07-16",
       "last": "2020-02-21",
       "gap": 29
@@ -297,7 +315,7 @@
     "songName": "Alumni Blues",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 109,
+      "times": 198,
       "debut": "1985-03-16",
       "last": "2019-12-08",
       "gap": 36
@@ -307,7 +325,7 @@
     "songName": "Amazing Grace",
     "originalArtist": "Traditional",
     "playInfo": {
-      "times": 108,
+      "times": 111,
       "debut": "1993-02-03",
       "last": "1998-10-03",
       "gap": 721
@@ -357,7 +375,7 @@
     "songName": "Anarchy",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 11,
+      "times": 12,
       "debut": "1985-03-04",
       "last": "1989-10-14",
       "gap": 1678
@@ -365,13 +383,19 @@
   },
   {
     "songName": "And It Stoned Me",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Van Morrison",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "And So To Bed",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Andy's Chest",
@@ -385,8 +409,11 @@
   },
   {
     "songName": "Another One Bites the Dust",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Queen",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Antelope",
@@ -445,7 +472,11 @@
   },
   {
     "songName": "Arrival",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Art Jam",
@@ -466,7 +497,7 @@
     "songName": "Ass Handed",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 15,
+      "times": 16,
       "debut": "2016-07-15",
       "last": "2019-12-28",
       "gap": 35
@@ -481,7 +512,7 @@
     "songName": "Auld Lang Syne",
     "originalArtist": "Traditional",
     "playInfo": {
-      "times": 24,
+      "times": 25,
       "debut": "1989-12-30",
       "last": "2019-12-31",
       "gap": 32
@@ -596,7 +627,7 @@
     "songName": "Back on the Train",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 124,
+      "times": 126,
       "debut": "1999-06-30",
       "last": "2020-02-23",
       "gap": 27
@@ -638,10 +669,18 @@
     }
   },
   {
+    "songName": "Basin Street Blues",
+    "originalArtist": "Louis Armstrong",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Bathtub Gin",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 275,
+      "times": 279,
       "debut": "1989-05-26",
       "last": "2020-02-21",
       "gap": 29
@@ -736,7 +775,7 @@
     "songName": "Big Ball Jam",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 102,
+      "times": 103,
       "debut": "1992-11-19",
       "last": "1994-12-09",
       "gap": 1007
@@ -756,7 +795,7 @@
     "songName": "Big Black Furry Creature from Mars",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 129,
+      "times": 139,
       "debut": "1987-08-21",
       "last": "2019-11-30",
       "gap": 42
@@ -786,7 +825,7 @@
     "songName": "Bike",
     "originalArtist": "Pink Floyd",
     "playInfo": {
-      "times": 42,
+      "times": 43,
       "debut": "1987-11-19",
       "last": "2018-11-02",
       "gap": 79
@@ -845,7 +884,10 @@
   {
     "songName": "Birthday Boys",
     "originalArtist": "Oysterhead",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Bitchin' Again",
@@ -888,6 +930,14 @@
     }
   },
   {
+    "songName": "Blackberry Blossom",
+    "originalArtist": "Traditional",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Blackbird",
     "originalArtist": "The Beatles",
     "playInfo": {
@@ -921,7 +971,7 @@
     "songName": "Blister in the Sun",
     "originalArtist": "Violent Femmes",
     "playInfo": {
-      "times": 3,
+      "times": 4,
       "debut": "1997-07-26",
       "last": "2012-07-07",
       "gap": 326
@@ -969,7 +1019,11 @@
   },
   {
     "songName": "Blue Over Yellow",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Blue Skies",
@@ -1143,7 +1197,11 @@
   },
   {
     "songName": "Bubble Wrap",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Buffalo Bill",
@@ -1179,7 +1237,7 @@
     "songName": "Buried Alive",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 157,
+      "times": 159,
       "debut": "1990-09-13",
       "last": "2019-12-31",
       "gap": 32
@@ -1257,13 +1315,17 @@
   },
   {
     "songName": "Can't Come Back",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Can't You Hear Me Knocking",
     "originalArtist": "The Rolling Stones",
     "playInfo": {
-      "times": 3,
+      "times": 4,
       "debut": "1984-11-03",
       "last": "1985-05-03",
       "gap": 1954
@@ -1368,7 +1430,7 @@
     "songName": "Cavern",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 456,
+      "times": 463,
       "debut": "1990-03-28",
       "last": "2020-02-20",
       "gap": 30
@@ -1388,7 +1450,7 @@
     "songName": "Chalk Dust Torture",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 474,
+      "times": 479,
       "debut": "1991-02-01",
       "last": "2020-02-22",
       "gap": 28
@@ -1398,7 +1460,7 @@
     "songName": "Chalk Dust Torture Reprise",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 4,
+      "times": 5,
       "debut": "1994-12-10",
       "last": "2019-12-28",
       "gap": 35
@@ -1478,7 +1540,7 @@
     "songName": "Cities",
     "originalArtist": "Talking Heads",
     "playInfo": {
-      "times": 94,
+      "times": 100,
       "debut": "1984-12-01",
       "last": "2019-12-01",
       "gap": 41
@@ -1528,7 +1590,7 @@
     "songName": "Cold as Ice",
     "originalArtist": "Foreigner",
     "playInfo": {
-      "times": 47,
+      "times": 84,
       "debut": "1992-03-07",
       "last": "1992-05-18",
       "gap": 1312
@@ -1558,7 +1620,7 @@
     "songName": "Colonel Forbin's Ascent",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 125,
+      "times": 126,
       "debut": "1988-03-12",
       "last": "2017-07-30",
       "gap": 128
@@ -1681,8 +1743,11 @@
   },
   {
     "songName": "Couch Lady",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Mike Gordon",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Cracklin' Rosie",
@@ -1718,7 +1783,7 @@
     "songName": "Crosseyed and Painless",
     "originalArtist": "Talking Heads",
     "playInfo": {
-      "times": 51,
+      "times": 53,
       "debut": "1996-10-31",
       "last": "2020-02-20",
       "gap": 30
@@ -1798,7 +1863,7 @@
     "songName": "Dave's Energy Guide",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 20,
+      "times": 21,
       "debut": "1985-04-06",
       "last": "1995-06-28",
       "gap": 982
@@ -1808,7 +1873,7 @@
     "songName": "David Bowie",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 451,
+      "times": 481,
       "debut": "1986-10-31",
       "last": "2020-02-23",
       "gap": 27
@@ -1827,7 +1892,10 @@
   {
     "songName": "Day-O (The Banana Boat Song)",
     "originalArtist": "West Indian folk song",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Dazed and Confused",
@@ -1901,7 +1969,11 @@
   },
   {
     "songName": "Den of Iniquity",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Destiny Unbound",
@@ -2032,7 +2104,7 @@
     "songName": "Dog Log",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 23,
+      "times": 24,
       "debut": "1985-10-30",
       "last": "2012-06-20",
       "gap": 337
@@ -2136,7 +2208,10 @@
   {
     "songName": "Doomsday",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Down By the River",
@@ -2152,7 +2227,7 @@
     "songName": "Down with Disease",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 282,
+      "times": 292,
       "debut": "1993-12-31",
       "last": "2019-12-28",
       "gap": 35
@@ -2322,7 +2397,7 @@
     "songName": "Esther",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 126,
+      "times": 127,
       "debut": "1988-09-12",
       "last": "2017-07-30",
       "gap": 128
@@ -2462,7 +2537,7 @@
     "songName": "Fee",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 280,
+      "times": 281,
       "debut": "1987-08-09",
       "last": "2020-02-23",
       "gap": 27
@@ -2532,7 +2607,7 @@
     "songName": "First Tube",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 101,
+      "times": 102,
       "debut": "1999-09-09",
       "last": "2019-12-31",
       "gap": 32
@@ -2541,7 +2616,10 @@
   {
     "songName": "Fish Bass",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Fishman's Gull Poem",
@@ -2607,7 +2685,7 @@
     "songName": "Fluffhead",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 259,
+      "times": 261,
       "debut": "1984-12-01",
       "last": "2019-12-31",
       "gap": 32
@@ -2617,7 +2695,7 @@
     "songName": "Fly Famous Mockingbird",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 125,
+      "times": 137,
       "debut": "1988-02-07",
       "last": "2017-07-30",
       "gap": 128
@@ -2702,7 +2780,7 @@
     "songName": "Frankenstein",
     "originalArtist": "The Edgar Winter Group",
     "playInfo": {
-      "times": 90,
+      "times": 91,
       "debut": "1989-11-11",
       "last": "2019-12-07",
       "gap": 37
@@ -2722,7 +2800,7 @@
     "songName": "Free",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 191,
+      "times": 194,
       "debut": "1995-05-16",
       "last": "2020-02-20",
       "gap": 30
@@ -2807,7 +2885,7 @@
     "songName": "Fuck Your Face",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 16,
+      "times": 17,
       "debut": "1987-04-29",
       "last": "2019-07-13",
       "gap": 48
@@ -2849,6 +2927,14 @@
     }
   },
   {
+    "songName": "Further On Up the Road",
+    "originalArtist": "Bobby \"Blue\" Bland",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Garden Party",
     "originalArtist": "Ricky Nelson",
     "playInfo": {
@@ -2860,8 +2946,11 @@
   },
   {
     "songName": "Gatekeeper",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Mike Gordon",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Gaul Swerves and the Rest is Everything Else",
@@ -2892,7 +2981,7 @@
     "songName": "Ghost",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 180,
+      "times": 182,
       "debut": "1997-06-13",
       "last": "2020-02-20",
       "gap": 30
@@ -2942,7 +3031,7 @@
     "songName": "Glide",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 115,
+      "times": 117,
       "debut": "1991-09-27",
       "last": "2019-07-14",
       "gap": 47
@@ -3072,7 +3161,7 @@
     "songName": "Gotta Jibboo",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 85,
+      "times": 86,
       "debut": "1999-09-10",
       "last": "2020-02-20",
       "gap": 30
@@ -3105,13 +3194,17 @@
   },
   {
     "songName": "Guantanamo Strut",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Guelah Papyrus",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 204,
+      "times": 207,
       "debut": "1991-02-01",
       "last": "2019-12-08",
       "gap": 36
@@ -3196,7 +3289,7 @@
     "songName": "Halley's Comet",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 133,
+      "times": 135,
       "debut": "1986-05-17",
       "last": "2019-12-31",
       "gap": 32
@@ -3236,7 +3329,7 @@
     "songName": "Happy Birthday to You",
     "originalArtist": "Traditional",
     "playInfo": {
-      "times": 20,
+      "times": 21,
       "debut": "1983-12-02",
       "last": "2016-06-25",
       "gap": 185
@@ -3246,7 +3339,7 @@
     "songName": "Harpua",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 64,
+      "times": 84,
       "debut": "1987-05-11",
       "last": "2017-07-30",
       "gap": 128
@@ -3256,7 +3349,7 @@
     "songName": "Harry Hood",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 387,
+      "times": 392,
       "debut": "1985-10-30",
       "last": "2020-02-22",
       "gap": 28
@@ -3275,7 +3368,10 @@
   {
     "songName": "He Ent to the Bog",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Head Held High",
@@ -3299,7 +3395,11 @@
   },
   {
     "songName": "Heartache",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Heartbreaker",
@@ -3333,8 +3433,11 @@
   },
   {
     "songName": "Hell's Bells",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "AC/DC",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Hello My Baby",
@@ -3397,6 +3500,14 @@
     }
   },
   {
+    "songName": "Hey You",
+    "originalArtist": "Bachman Turner Overdrive",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "High-Heel Sneakers",
     "originalArtist": "Tommy Tucker",
     "playInfo": {
@@ -3440,7 +3551,7 @@
     "songName": "Hold Your Head Up",
     "originalArtist": "Argent",
     "playInfo": {
-      "times": 308,
+      "times": 532,
       "debut": "1987-08-21",
       "last": "2019-12-04",
       "gap": 39
@@ -3555,7 +3666,7 @@
     "songName": "I Am Hydrogen",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 336,
+      "times": 338,
       "debut": "1985-04-06",
       "last": "2019-08-31",
       "gap": 45
@@ -3605,7 +3716,7 @@
     "songName": "I Can't Turn You Loose",
     "originalArtist": "Otis Redding",
     "playInfo": {
-      "times": 1,
+      "times": 2,
       "debut": "1997-12-29",
       "last": "1997-12-29",
       "gap": 762
@@ -3615,7 +3726,7 @@
     "songName": "I Didn't Know",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 258,
+      "times": 261,
       "debut": "1987-11-18",
       "last": "2019-11-30",
       "gap": 42
@@ -3830,7 +3941,7 @@
     "songName": "Icculus",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 27,
+      "times": 29,
       "debut": "1986-04-01",
       "last": "2019-07-14",
       "gap": 47
@@ -3878,7 +3989,11 @@
   },
   {
     "songName": "If I Told You",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "If You Need a Fool",
@@ -3923,7 +4038,10 @@
   {
     "songName": "In a Misty Glade",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "In an Intensive Care Unit",
@@ -3973,12 +4091,18 @@
   {
     "songName": "Ingest",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Insects",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Instant Karma!",
@@ -4064,7 +4188,7 @@
     "songName": "It's Ice",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 239,
+      "times": 246,
       "debut": "1991-09-25",
       "last": "2019-12-08",
       "gap": 36
@@ -4094,7 +4218,7 @@
     "songName": "Jam",
     "originalArtist": "Traditional",
     "playInfo": {
-      "times": 73,
+      "times": 77,
       "debut": "1984-11-03",
       "last": "2014-07-27",
       "gap": 245
@@ -4131,6 +4255,14 @@
     }
   },
   {
+    "songName": "John Hardy",
+    "originalArtist": "Traditional",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Johnny B. Goode",
     "originalArtist": "Chuck Berry",
     "playInfo": {
@@ -4142,8 +4274,11 @@
   },
   {
     "songName": "Join the Band",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Traditional",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Joy",
@@ -4219,7 +4354,7 @@
     "songName": "Keyboard Army",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 14,
+      "times": 15,
       "debut": "1995-09-27",
       "last": "2015-09-06",
       "gap": 195
@@ -4264,7 +4399,7 @@
     "songName": "Kung",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 38,
+      "times": 39,
       "debut": "1989-10-31",
       "last": "2019-11-30",
       "gap": 42
@@ -4274,7 +4409,7 @@
     "songName": "L.A. Woman",
     "originalArtist": "The Doors",
     "playInfo": {
-      "times": 1,
+      "times": 2,
       "debut": "2003-12-30",
       "last": "2003-12-30",
       "gap": 512
@@ -4302,13 +4437,17 @@
   },
   {
     "songName": "Last Victor Jam",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Lawn Boy",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 213,
+      "times": 214,
       "debut": "1989-11-30",
       "last": "2019-11-30",
       "gap": 42
@@ -4326,7 +4465,11 @@
   },
   {
     "songName": "Lazy and Red",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Le Freak",
@@ -4402,7 +4545,7 @@
     "songName": "Let's Go",
     "originalArtist": "The Cars",
     "playInfo": {
-      "times": 6,
+      "times": 11,
       "debut": "1991-02-04",
       "last": "1991-03-22",
       "gap": 1469
@@ -4452,7 +4595,7 @@
     "songName": "Light",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 101,
+      "times": 103,
       "debut": "2009-05-31",
       "last": "2019-12-31",
       "gap": 32
@@ -4481,7 +4624,10 @@
   {
     "songName": "Liquid Time",
     "originalArtist": "Trey Anastasio",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Listening Wind",
@@ -4537,7 +4683,7 @@
     "songName": "Llama",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 307,
+      "times": 309,
       "debut": "1990-10-27",
       "last": "2019-11-30",
       "gap": 42
@@ -4627,7 +4773,7 @@
     "songName": "Love You",
     "originalArtist": "Syd Barrett",
     "playInfo": {
-      "times": 93,
+      "times": 96,
       "debut": "1987-10-31",
       "last": "2016-07-16",
       "gap": 173
@@ -4701,7 +4847,10 @@
   {
     "songName": "Maggie's Revenge",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Magilla",
@@ -4727,7 +4876,7 @@
     "songName": "Makisupa Policeman",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 105,
+      "times": 110,
       "debut": "1984-10-23",
       "last": "2020-02-22",
       "gap": 28
@@ -4747,7 +4896,7 @@
     "songName": "Manteca",
     "originalArtist": "Dizzy Gillespie",
     "playInfo": {
-      "times": 15,
+      "times": 16,
       "debut": "1990-11-04",
       "last": "2020-02-22",
       "gap": 28
@@ -4792,7 +4941,7 @@
     "songName": "Martian Monster",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 34,
+      "times": 37,
       "debut": "2014-10-31",
       "last": "2019-12-31",
       "gap": 32
@@ -4812,7 +4961,7 @@
     "songName": "Maze",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 314,
+      "times": 318,
       "debut": "1992-03-06",
       "last": "2019-12-31",
       "gap": 32
@@ -4842,7 +4991,7 @@
     "songName": "Meat",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 38,
+      "times": 39,
       "debut": "1998-07-02",
       "last": "2020-02-23",
       "gap": 27
@@ -4852,7 +5001,7 @@
     "songName": "Meatstick",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 66,
+      "times": 67,
       "debut": "1997-06-25",
       "last": "2019-11-29",
       "gap": 43
@@ -4964,6 +5113,14 @@
     }
   },
   {
+    "songName": "Midnight Moonlight",
+    "originalArtist": "Peter Rowan",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Midnight on the Highway",
     "originalArtist": "Hot Rize",
     "playInfo": {
@@ -4987,7 +5144,7 @@
     "songName": "Mike's Song",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 509,
+      "times": 526,
       "debut": "1985-03-16",
       "last": "2019-12-30",
       "gap": 33
@@ -5011,7 +5168,10 @@
   {
     "songName": "Minkin",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Minute by Minute",
@@ -5065,8 +5225,11 @@
   },
   {
     "songName": "MmmBop",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Hanson",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Mo' Better Blues",
@@ -5082,7 +5245,7 @@
     "songName": "Moby Dick",
     "originalArtist": "Led Zeppelin",
     "playInfo": {
-      "times": 3,
+      "times": 8,
       "debut": "1993-02-19",
       "last": "2000-07-11",
       "gap": 588
@@ -5121,7 +5284,10 @@
   {
     "songName": "Montana",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Moonage Daydream",
@@ -5187,7 +5353,7 @@
     "songName": "Mound",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 114,
+      "times": 115,
       "debut": "1992-03-06",
       "last": "2019-12-08",
       "gap": 36
@@ -5217,7 +5383,7 @@
     "songName": "Mr. Completely",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 6,
+      "times": 7,
       "debut": "2003-07-15",
       "last": "2019-12-07",
       "gap": 37
@@ -5257,7 +5423,7 @@
     "songName": "My Friend, My Friend",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 155,
+      "times": 156,
       "debut": "1992-03-06",
       "last": "2019-12-29",
       "gap": 34
@@ -5277,7 +5443,7 @@
     "songName": "My Left Toe",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 4,
+      "times": 5,
       "debut": "1999-06-30",
       "last": "1999-07-25",
       "gap": 668
@@ -5337,7 +5503,7 @@
     "songName": "My Sweet One",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 247,
+      "times": 249,
       "debut": "1989-09-09",
       "last": "2019-12-08",
       "gap": 36
@@ -5479,6 +5645,14 @@
     }
   },
   {
+    "songName": "No Reply At All",
+    "originalArtist": "Genesis",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "NO2",
     "originalArtist": "Phish",
     "playInfo": {
@@ -5490,8 +5664,11 @@
   },
   {
     "songName": "Norwegian Wood (This Bird Has Flown)",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "The Beatles",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Not Fade Away",
@@ -5700,12 +5877,19 @@
   },
   {
     "songName": "Only a Dream",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Only Shallow",
     "originalArtist": "My Bloody Valentine",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Oye Como Va",
@@ -5841,7 +6025,7 @@
     "songName": "Piper",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 173,
+      "times": 174,
       "debut": "1997-06-14",
       "last": "2020-02-21",
       "gap": 29
@@ -5851,7 +6035,7 @@
     "songName": "Plasma",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 14,
+      "times": 20,
       "debut": "2014-10-17",
       "last": "2020-02-21",
       "gap": 29
@@ -5881,7 +6065,7 @@
     "songName": "Poor Heart",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 306,
+      "times": 308,
       "debut": "1988-08-04",
       "last": "2019-12-01",
       "gap": 41
@@ -5891,7 +6075,7 @@
     "songName": "Possum",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 532,
+      "times": 541,
       "debut": "1985-09-27",
       "last": "2020-02-21",
       "gap": 29
@@ -6051,7 +6235,7 @@
     "songName": "Reba",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 385,
+      "times": 388,
       "debut": "1989-10-01",
       "last": "2019-12-07",
       "gap": 37
@@ -6081,7 +6265,7 @@
     "songName": "Revolution",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 3,
+      "times": 4,
       "debut": "1985-04-06",
       "last": "1985-10-17",
       "gap": 1949
@@ -6170,7 +6354,10 @@
   {
     "songName": "Riker's Mailbox",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Rip This Joint",
@@ -6295,7 +6482,10 @@
   {
     "songName": "Rocketsled's Funky Main Man Meets Big Joe on Church Street",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Rocks Off",
@@ -6401,7 +6591,7 @@
     "songName": "Ruby Waves",
     "originalArtist": "Trey Anastasio",
     "playInfo": {
-      "times": 7,
+      "times": 9,
       "debut": "2019-06-18",
       "last": "2019-12-30",
       "gap": 33
@@ -6411,7 +6601,7 @@
     "songName": "Run Like an Antelope",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 458,
+      "times": 472,
       "debut": "1985-04-06",
       "last": "2020-02-20",
       "gap": 30
@@ -6421,7 +6611,7 @@
     "songName": "Runaway Jim",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 383,
+      "times": 387,
       "debut": "1990-03-28",
       "last": "2019-12-04",
       "gap": 39
@@ -6551,7 +6741,7 @@
     "songName": "Saw It Again",
     "originalArtist": "New York!",
     "playInfo": {
-      "times": 38,
+      "times": 40,
       "debut": "1997-06-14",
       "last": "2019-12-06",
       "gap": 38
@@ -6601,7 +6791,7 @@
     "songName": "Scent of a Mule",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 134,
+      "times": 143,
       "debut": "1994-04-04",
       "last": "2019-11-29",
       "gap": 43
@@ -6611,7 +6801,7 @@
     "songName": "Scents and Subtle Sounds",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 29,
+      "times": 30,
       "debut": "2003-07-07",
       "last": "2019-12-06",
       "gap": 38
@@ -6619,7 +6809,11 @@
   },
   {
     "songName": "Scents and Subtle Sounds (Intro)",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Sea and Sand",
@@ -6635,7 +6829,7 @@
     "songName": "Secret Language Instructions",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 10,
+      "times": 12,
       "debut": "1992-03-06",
       "last": "1993-03-16",
       "gap": 1211
@@ -6715,7 +6909,7 @@
     "songName": "Seven Below",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 46,
+      "times": 47,
       "debut": "2002-12-31",
       "last": "2019-07-10",
       "gap": 50
@@ -6755,7 +6949,7 @@
     "songName": "Shafty",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 6,
+      "times": 9,
       "debut": "1998-04-05",
       "last": "2020-02-21",
       "gap": 29
@@ -6863,7 +7057,11 @@
   },
   {
     "songName": "Shrine",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Sightless Escape",
@@ -6899,7 +7097,7 @@
     "songName": "Simple",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 178,
+      "times": 182,
       "debut": "1994-05-27",
       "last": "2020-02-23",
       "gap": 27
@@ -6947,7 +7145,11 @@
   },
   {
     "songName": "Sky Train Wand",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Slave to the Traffic Light",
@@ -7028,7 +7230,7 @@
     "songName": "Sneakin' Sally Through the Alley",
     "originalArtist": "Lee Dorsey",
     "playInfo": {
-      "times": 76,
+      "times": 77,
       "debut": "1985-03-08",
       "last": "2019-12-29",
       "gap": 34
@@ -7055,13 +7257,25 @@
     }
   },
   {
+    "songName": "So What",
+    "originalArtist": "Miles Davis",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "SOAM",
     "originalArtist": "Phish",
     "aliasOf": "Split Open and Melt"
   },
   {
     "songName": "Somantin",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Something",
@@ -7195,13 +7409,17 @@
   },
   {
     "songName": "Splinters of Hail",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Split Open and Melt",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 321,
+      "times": 324,
       "debut": "1989-02-17",
       "last": "2019-12-07",
       "gap": 37
@@ -7311,7 +7529,7 @@
     "songName": "Stash",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 419,
+      "times": 425,
       "debut": "1990-09-13",
       "last": "2019-11-30",
       "gap": 42
@@ -7331,7 +7549,7 @@
     "songName": "Steam",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 43,
+      "times": 44,
       "debut": "2011-06-04",
       "last": "2020-02-20",
       "gap": 30
@@ -7349,7 +7567,11 @@
   },
   {
     "songName": "Steve Reich",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Stir It Up",
@@ -7472,9 +7694,20 @@
     }
   },
   {
+    "songName": "Sunshine Superman",
+    "originalArtist": "Donovan",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Susie Q",
     "originalArtist": "Dale Hawkins",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Suspicious Minds",
@@ -7500,7 +7733,7 @@
     "songName": "Suzy Greenberg",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 435,
+      "times": 436,
       "debut": "1987-02-13",
       "last": "2019-12-06",
       "gap": 38
@@ -7720,7 +7953,7 @@
     "songName": "Terrapin",
     "originalArtist": "Syd Barrett",
     "playInfo": {
-      "times": 66,
+      "times": 67,
       "debut": "1987-09-21",
       "last": "2019-12-04",
       "gap": 39
@@ -7798,7 +8031,11 @@
   },
   {
     "songName": "The Cataract Song",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "The Chase",
@@ -7874,7 +8111,7 @@
     "songName": "The Curtain With",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 39,
+      "times": 40,
       "debut": "1987-08-09",
       "last": "2019-06-30",
       "gap": 56
@@ -8019,7 +8256,7 @@
     "songName": "The Landlady",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 211,
+      "times": 212,
       "debut": "1990-09-13",
       "last": "2020-02-20",
       "gap": 30
@@ -8059,7 +8296,7 @@
     "songName": "The Little Drummer Boy",
     "originalArtist": "Katherine Davis, Henry Onorati & Harry Simeone",
     "playInfo": {
-      "times": 4,
+      "times": 5,
       "debut": "1986-12-06",
       "last": "2004-04-16",
       "gap": 507
@@ -8089,7 +8326,7 @@
     "songName": "The Man Who Stepped Into Yesterday",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 81,
+      "times": 142,
       "debut": "1987-05-11",
       "last": "2019-12-01",
       "gap": 41
@@ -8118,7 +8355,10 @@
   {
     "songName": "The Name is Slick",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "The Ocean",
@@ -8459,7 +8699,7 @@
     "songName": "Timber",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 2,
+      "times": 3,
       "debut": "2014-10-31",
       "last": "2016-07-10",
       "gap": 175
@@ -8508,12 +8748,18 @@
   {
     "songName": "Tiny",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Title Track",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "TMWSIY",
@@ -8632,8 +8878,11 @@
   },
   {
     "songName": "Tropical Hot Dog Night",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Captain Beefheart",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Trust Fund Baby",
@@ -8649,7 +8898,7 @@
     "songName": "Tube",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 161,
+      "times": 163,
       "debut": "1990-09-13",
       "last": "2020-02-22",
       "gap": 28
@@ -8729,7 +8978,7 @@
     "songName": "Tweezer",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 375,
+      "times": 410,
       "debut": "1990-03-28",
       "last": "2020-02-22",
       "gap": 28
@@ -8739,7 +8988,7 @@
     "songName": "Tweezer Reprise",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 289,
+      "times": 295,
       "debut": "1991-02-01",
       "last": "2020-02-22",
       "gap": 28
@@ -8749,7 +8998,7 @@
     "songName": "Twenty Years Later",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 37,
+      "times": 38,
       "debut": "2009-06-05",
       "last": "2019-12-28",
       "gap": 35
@@ -8759,7 +9008,7 @@
     "songName": "Twist",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 145,
+      "times": 148,
       "debut": "1997-06-14",
       "last": "2020-02-22",
       "gap": 28
@@ -8818,7 +9067,10 @@
   {
     "songName": "Union Federal",
     "originalArtist": "Phish",
-    "foundInDiscography": true
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "United We Stand",
@@ -8828,6 +9080,14 @@
       "debut": "2015-09-06",
       "last": "2015-09-06",
       "gap": 195
+    }
+  },
+  {
+    "songName": "Unknown",
+    "originalArtist": "---",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
     }
   },
   {
@@ -8872,7 +9132,11 @@
   },
   {
     "songName": "Victor Jam Session",
-    "foundInDiscography": true
+    "originalArtist": "Phish",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Viola Lee Blues",
@@ -8882,6 +9146,14 @@
       "debut": "1999-09-17",
       "last": "1999-09-17",
       "gap": 654
+    }
+  },
+  {
+    "songName": "Voodoo Child (Slight Return)",
+    "originalArtist": "Jimi Hendrix Experience",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
     }
   },
   {
@@ -8908,7 +9180,7 @@
     "songName": "Wait",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 3,
+      "times": 6,
       "debut": "1991-10-31",
       "last": "1992-05-14",
       "gap": 1316
@@ -8995,6 +9267,14 @@
     }
   },
   {
+    "songName": "Watcher of the Skies",
+    "originalArtist": "Genesis",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
+  },
+  {
     "songName": "Water in the Sky",
     "originalArtist": "Phish",
     "playInfo": {
@@ -9058,7 +9338,7 @@
     "songName": "Weekapaug Groove",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 481,
+      "times": 496,
       "debut": "1988-07-23",
       "last": "2020-02-21",
       "gap": 29
@@ -9066,8 +9346,11 @@
   },
   {
     "songName": "Weekly Time",
-    "originalArtist": "Phish",
-    "foundInDiscography": true
+    "originalArtist": "Ramble Dove",
+    "playInfo": {
+      "times": 0,
+      "gap": 1978
+    }
   },
   {
     "songName": "Weigh",
@@ -9198,7 +9481,7 @@
     "songName": "Who Do? We Do!",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 15,
+      "times": 16,
       "debut": "1987-04-24",
       "last": "1990-03-10",
       "gap": 1616
@@ -9348,7 +9631,7 @@
     "songName": "Wilson",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 281,
+      "times": 285,
       "debut": "1986-10-12",
       "last": "2019-12-30",
       "gap": 33
@@ -9413,7 +9696,7 @@
     "songName": "Wipe Out",
     "originalArtist": "The Surfaris (a.k.a. The Safaris)",
     "playInfo": {
-      "times": 4,
+      "times": 6,
       "debut": "1991-04-15",
       "last": "1998-11-29",
       "gap": 693
@@ -9423,7 +9706,7 @@
     "songName": "Wolfman's Brother",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 206,
+      "times": 207,
       "debut": "1994-04-04",
       "last": "2019-12-31",
       "gap": 32
@@ -9528,7 +9811,7 @@
     "songName": "You Enjoy Myself",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 591,
+      "times": 616,
       "debut": "1986-02-03",
       "last": "2020-02-20",
       "gap": 30
@@ -9558,7 +9841,7 @@
     "songName": "You Sexy Thing",
     "originalArtist": "Hot Chocolate",
     "playInfo": {
-      "times": 3,
+      "times": 5,
       "debut": "2017-07-28",
       "last": "2020-02-22",
       "gap": 28
@@ -9578,7 +9861,7 @@
     "songName": "Your Pet Cat",
     "originalArtist": "Phish",
     "playInfo": {
-      "times": 16,
+      "times": 17,
       "debut": "2014-10-31",
       "last": "2020-02-22",
       "gap": 28
