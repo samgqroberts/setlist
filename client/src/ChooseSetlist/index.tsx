@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react';
 import * as R from '../general/Roster';
 import { songs } from '../general/SongData';
 import styles from './ChooseSetlist.module.css';
+import SongListTable from './SongListTable';
 
 const ChooseSetlist: React.FC<{
   onSubmit: (roster: R.Roster) => void;
@@ -15,7 +16,7 @@ const ChooseSetlist: React.FC<{
     )
     .filter((s) => !R.includes(roster, s.songName))
     .sort((a, b) => a.songName.localeCompare(b.songName));
-  const addSong = (songName: string) => () => {
+  const addSong = (songName: string) => {
     setRoster(R.addSong(roster, songName));
   };
   const clearIndex = (index: R.RosterIndex) => () => {
@@ -41,35 +42,7 @@ const ChooseSetlist: React.FC<{
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
-          <div className={styles.songListTableContainer}>
-            <table className={styles.songListTable}>
-              <thead>
-                <tr>
-                  <th /> {/* Empty header over 'add' column */}
-                  <th>Song Name</th>
-                  <th>Last Played</th>
-                  <th># Played</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredSongs.map((d) => (
-                  <tr key={d.songName + (d.originalArtist || '')}>
-                    <td>
-                      <button
-                        className={styles.addButton}
-                        onClick={addSong(d.songName)}
-                      >
-                        +
-                      </button>
-                    </td>
-                    <td>{d.songName}</td>
-                    <td>{'last' in d.playInfo ? d.playInfo.last : '--'}</td>
-                    <td>{'times' in d.playInfo ? d.playInfo.times : '--'}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <SongListTable songs={filteredSongs} onAdd={addSong} />
         </div>
         <div className={styles.rosterContainer}>
           <table className={styles.roster}>

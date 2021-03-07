@@ -1,0 +1,71 @@
+@value SongListHeaderHeight: 40px;
+
+.songListTableContainer {
+  position: absolute;
+  top: SongListHeaderHeight;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.songListTable {
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.songListTable tbody {
+  width: 100%;
+  overflow-x: hidden;
+  height: fit-content;
+  border-top: 1px solid lightgrey;
+}
+
+.songListTable tr {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  border: 1px solid lightgrey;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.songListTable tr:last-of-type {
+  border-bottom-width: 0;
+}
+
+.songListTable td, .songListTable th {
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.songListTable td:nth-child(1), .songListTable th:nth-child(1) {
+  width: 10%;
+}
+.songListTable td:nth-child(2), .songListTable th:nth-child(2) {
+  width: 50%;
+  justify-content: left;
+  text-align: left;
+}
+.songListTable td:nth-child(3), .songListTable th:nth-child(3) {
+  width: 27%;
+}
+.songListTable td:nth-child(4), .songListTable th:nth-child(4) {
+  width: 13%;
+}
+
+.addButton {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 30px;
+}
