@@ -40,24 +40,23 @@
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .songListTable {
   table-layout: fixed;
   height: 100%;
   width: 100%;
-  display: block;
   border: 1px solid lightgrey;
   border-collapse: collapse;
+  position: relative;
 }
 
 .songListTable tbody {
-  height: 100%;
   width: 100%;
-  display: block;
   overflow-x: hidden;
-  overflow-y: scroll;
+  height: fit-content;
+  border-top: 1px solid lightgrey;
 }
 
 .songListTable tr {
@@ -74,25 +73,25 @@
   border-bottom-width: 0;
 }
 
-.songListTable td {
+.songListTable td, .songListTable th {
   padding: 2px;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.songListTable td:nth-child(1) {
+.songListTable td:nth-child(1), .songListTable th:nth-child(1) {
   width: 10%;
 }
-.songListTable td:nth-child(2) {
+.songListTable td:nth-child(2), .songListTable th:nth-child(2) {
   width: 50%;
   justify-content: left;
   text-align: left;
 }
-.songListTable td:nth-child(3) {
+.songListTable td:nth-child(3), .songListTable th:nth-child(3) {
   width: 27%;
 }
-.songListTable td:nth-child(4) {
+.songListTable td:nth-child(4), .songListTable th:nth-child(4) {
   width: 13%;
 }
 

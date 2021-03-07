@@ -43,6 +43,14 @@ const ChooseSetlist: React.FC<{
           </div>
           <div className={styles.songListTableContainer}>
             <table className={styles.songListTable}>
+              <thead>
+                <tr>
+                  <th /> {/* Empty header over 'add' column */}
+                  <th>Song Name</th>
+                  <th>Last Played</th>
+                  <th># Played</th>
+                </tr>
+              </thead>
               <tbody>
                 {filteredSongs.map((d) => (
                   <tr key={d.songName + (d.originalArtist || '')}>
