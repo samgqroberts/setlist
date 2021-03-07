@@ -18,8 +18,13 @@
   position: relative;
 }
 
-.songListTable th {
+.songListTable th button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  height: 100%;
 }
 
 .songListTable tbody {
