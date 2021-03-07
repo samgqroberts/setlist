@@ -18,6 +18,10 @@
   position: relative;
 }
 
+.songListTable th {
+  cursor: pointer;
+}
+
 .songListTable tbody {
   width: 100%;
   overflow-x: hidden;
