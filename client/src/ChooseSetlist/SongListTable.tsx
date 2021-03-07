@@ -1,10 +1,17 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { assertNever, SongDataWithPlayInfo } from 'shared';
 
+import MaterialIcon from '../general/MaterialIcon';
 import styles from './SongListTable.module.css';
 
 const columnKeys = ['songName', 'lastPlayed', 'timesPlayed'] as const;
 type ColumnKey = typeof columnKeys[number];
+
+const columnNames = {
+  songName: 'Song Name',
+  lastPlayed: 'Last Played',
+  timesPlayed: '# Played'
+} as const;
 
 type SortDirection = 'asc' | 'desc';
 
@@ -51,21 +58,35 @@ const SongListTable: React.FC<{
         assertNever(sort.columnKey);
     }
   });
+  const sortArrowDown = () => <MaterialIcon iconName={'keyboard_arrow_down'} />;
+  const sortArrowUp = () => <MaterialIcon iconName={'keyboard_arrow_up'} />;
+  const sortArrow = (columnKey: ColumnKey) => {
+    if (columnKey === sort.columnKey)
+      return (
+        <React.Fragment>
+          {' '}
+          {sort.direction === 'asc' ? sortArrowUp() : sortArrowDown()}
+        </React.Fragment>
+      );
+    return null;
+  };
+  const headerCell = (columnKey: ColumnKey) => (
+    <th>
+      <button onClick={() => onSort(columnKey)}>
+        {columnNames[columnKey]}
+        {sortArrow(columnKey)}
+      </button>
+    </th>
+  );
   return (
     <div className={styles.songListTableContainer}>
       <table className={styles.songListTable}>
         <thead>
           <tr>
             <th /> {/* Empty header over 'add' column */}
-            <th>
-              <button onClick={() => onSort('songName')}>Song Name</button>
-            </th>
-            <th>
-              <button onClick={() => onSort('lastPlayed')}>Last Played</button>
-            </th>
-            <th>
-              <button onClick={() => onSort('timesPlayed')}># Played</button>
-            </th>
+            {headerCell('songName')}
+            {headerCell('lastPlayed')}
+            {headerCell('timesPlayed')}
           </tr>
         </thead>
         <tbody>
