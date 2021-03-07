@@ -1,5 +1,6 @@
 import {
   isSongData,
+  isSongDataAlias,
   isSongDataWithPlayInfo,
   SongData,
   SongDataWithPlayInfo
@@ -9,7 +10,24 @@ import data from './song-data.json';
 
 export const allSongData = data.filter(isSongData) as SongData[];
 
-export const songs = allSongData.filter(isSongDataWithPlayInfo);
+export const directSongs = allSongData.filter(isSongDataWithPlayInfo);
+
+type SongWithAliases = SongDataWithPlayInfo & { aliases: string[] | undefined };
+
+type AliasMap = { [K: string]: string[] };
+const aliasMap: AliasMap = allSongData.reduce((acc, el) => {
+  if (isSongDataAlias(el)) {
+    if (acc[el.aliasOf])
+      return { ...acc, [el.aliasOf]: [...acc[el.aliasOf], el.songName] };
+    return { ...acc, [el.aliasOf]: [el.songName] };
+  }
+  return acc;
+}, {} as AliasMap);
+
+export const songs: SongWithAliases[] = directSongs.map((song) => {
+  return { ...song, aliases: aliasMap[song.songName] };
+});
+console.log(songs);
 
 function isCover(data: SongData): boolean {
   return !!data.originalArtist && data.originalArtist !== 'Phish';

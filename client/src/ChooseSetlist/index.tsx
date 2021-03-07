@@ -11,8 +11,12 @@ const ChooseSetlist: React.FC<{
   const [search, setSearch] = useState<string>('');
   const [roster, setRoster] = useState<R.Roster>(R.empty());
   const filteredSongs = songs
-    .filter((s) =>
-      s.songName.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+    .filter(
+      (s) =>
+        s.songName.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
+        s.aliases?.some((alias) =>
+          alias.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+        )
     )
     .filter((s) => !R.includes(roster, s.songName))
     .sort((a, b) => a.songName.localeCompare(b.songName));
